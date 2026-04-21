@@ -103,10 +103,3 @@ Sales_Project/
 7. Use the outputs in the `outputs/` folder for further insights and reporting.
 
 ---
-
-## Limitations
-
-- This project planned to integrate Apache Airflow for workflow orchestration, but it was not feasible due to the technical limitations of the system. Windows 11 Home lacks support for WSL2 (Windows Subsystem for Linux 2), which is required to run Airflow natively or via Docker. These features, such as Hyper-V and Virtual Machine Platform, are only available on Windows 11 Pro or higher editions, limiting the automation capabilities of the data pipeline that was intended to be included.
-
-- The project aimed to incorporate weather data for enhanced analysis using a free Weather API. However, due to the limitations of the free subscription, retrieving data at scale was challenging. Workarounds such as batch API calls were implemented, but the API provided insufficient data points for accurate analysis. To maintain accuracy, the weather data was excluded from the final analysis. The code for ingesting data from the Weather API is still included in the Python notebook for reference.
-
